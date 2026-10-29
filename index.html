@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Animated Skill Bars | Task 29</title>
+  <!-- Google Fonts & FontAwesome Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <main class="container">
+    <header class="header">
+      <span class="badge">Task 29 • Web Development</span>
+      <h1>Technical Proficiency</h1>
+      <p>Scroll down or observe the smooth CSS fill transitions as technical skills load into view.</p>
+    </header>
+
+    <!-- Spacer to demonstrate scroll-triggered IntersectionObserver -->
+    <div class="scroll-prompt">
+      <i class="fa-solid fa-arrow-down-long"></i>
+      <span>Scroll to activate skill animations</span>
+    </div>
+
+    <!-- Skills Card Container -->
+    <section class="skills-card" id="skills-section">
+      <div class="card-header">
+        <h2>Core Skillset</h2>
+        <button id="replay-btn" class="btn-replay" aria-label="Replay animation">
+          <i class="fa-solid fa-rotate-right"></i> Replay Animation
+        </button>
+      </div>
+
+      <div class="skills-list">
+        <!-- Skill 1: HTML5/CSS3 -->
+        <div class="skill-item">
+          <div class="skill-info">
+            <span class="skill-name"><i class="fa-brands fa-html5 skill-icon html"></i> HTML5 & CSS3</span>
+            <span class="skill-percentage" data-target="90">0%</span>
+          </div>
+          <div class="progress-track">
+            <div class="progress-fill" data-progress="90"></div>
+          </div>
+        </div>
+
+        <!-- Skill 2: JavaScript -->
+        <div class="skill-item">
+          <div class="skill-info">
+            <span class="skill-name"><i class="fa-brands fa-square-js skill-icon js"></i> JavaScript (ES6+)</span>
+            <span class="skill-percentage" data-target="85">0%</span>
+          </div>
+          <div class="progress-track">
+            <div class="progress-fill" data-progress="85"></div>
+          </div>
+        </div>
+
+        <!-- Skill 3: Python & Django -->
+        <div class="skill-item">
+          <div class="skill-info">
+            <span class="skill-name"><i class="fa-brands fa-python skill-icon python"></i> Python / Django</span>
+            <span class="skill-percentage" data-target="80">0%</span>
+          </div>
+          <div class="progress-track">
+            <div class="progress-fill" data-progress="80"></div>
+          </div>
+        </div>
+
+        <!-- Skill 4: SQL & Databases -->
+        <div class="skill-item">
+          <div class="skill-info">
+            <span class="skill-name"><i class="fa-solid fa-database skill-icon db"></i> SQL & Database Design</span>
+            <span class="skill-percentage" data-target="75">0%</span>
+          </div>
+          <div class="progress-track">
+            <div class="progress-fill" data-progress="75"></div>
+          </div>
+        </div>
+
+        <!-- Skill 5: Git & GitHub -->
+        <div class="skill-item">
+          <div class="skill-info">
+            <span class="skill-name"><i class="fa-brands fa-git-alt skill-icon git"></i> Git & Version Control</span>
+            <span class="skill-percentage" data-target="88">0%</span>
+          </div>
+          <div class="progress-track">
+            <div class="progress-fill" data-progress="88"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
